@@ -1,0 +1,36 @@
+@(id: Long, caradvertForm: Form[CarAdvert])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.f) }
+
+@main {
+    
+    <h1>Edit computer</h1>
+    
+    @form(routes.CarAdverts.update(id)) {
+        
+        <fieldset>
+        
+            @inputText(caradvertForm("title"), '_label -> "title")
+            @inputText(caradvertForm("fuel"), '_label -> "Ifuel")
+            @inputText(caradvertForm("price"), '_label -> "price")
+            @inputText(caradvertForm("issnew"), '_label -> "issnew")
+            @inputText(caradvertForm("mileage"), '_label -> "Mileage")
+            @inputText(caradvertForm("carregister"), '_label -> "First registration") 
+             
+        
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Save this computer" class="btn primary"> or 
+            <a href="@routes.CarAdverts.showList()" class="btn">Cancel</a> 
+        </div>
+        
+    }
+    
+    @form(routes.CarAdverts.delete(id), 'class -> "topRight") {
+        <input type="submit" value="Delete this computer" class="btn danger">
+    }
+    
+}

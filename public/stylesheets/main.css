@@ -1,0 +1,101 @@
+html {
+    background: #eee;
+}
+
+header h1 {
+    padding: 0.4em 1.1em;
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+section#main {
+    position: relative;
+    padding: 5em 2em;
+    border-bottom: 1px solid #ccc;
+    min-height: 600px;
+} 
+
+section#main .topRight {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+
+table.computers em {
+    color: #aaa;
+}
+
+table.computers .col3, table.computers .col4 {
+    width: 10%;
+    min-width: 100px;
+}
+
+table.computers .col5 {
+    width: 30%;
+    min-width: 300px;
+}
+
+table.computers .header a {
+}
+
+#actions {
+    position: relative;
+}
+
+#actions #add {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#pagination {
+    position: relative;
+}
+
+#pagination ul {
+    position: absolute;
+    right: 0;
+}
+
+#pagination ul .current a {
+    color: #666;
+}
+
+.pillsX a{margin:5px 3px 5px 0;
+    padding:0 15px;
+    text-shadow:0 1px 1px #ffffff;
+    line-height:30px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+}
+
+.pillsZ a:hover{background:#00438a;
+    color:#ffffff;
+    text-decoration:none;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pillsKK {
+    background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);   /* #fcfff4 #E0DE82 */
+    /* FF3.6+ SZARY ZAJEBISTY */
+    /* background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%);  */
+    /* FF3.6+ ZLOTY PODOBA SIE MAMIE */
+    /* color:#ffffff; */
+    color:FF0000;
+    text-decoration:blink;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.newspaper {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+
