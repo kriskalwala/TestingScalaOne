@@ -1,4 +1,19 @@
-This is your new Play 2.0 application
-=====================================
+SCALA APPLICATION handlin REST calls
 
-This file will be packaged with your application, when using `play dist`.
+GET     /caradverts                  controllers.CarAdverts.showList(p:Int ?= 0, s:Int ?= 2, f ?= "")
+GET     /caradverts/new              controllers.CarAdverts.create
+GET     /caradverts/:id              controllers.CarAdverts.edit(id:Long)
+POST    /caradverts/:id              controllers.CarAdverts.update(id:Long)
+POST    /caradverts/:id/delete       controllers.CarAdverts.delete(id:Long)
+POST    /caradverts                  controllers.CarAdverts.save
+
+run application :
+http://localhost:9000/caradverts
+
+start  evolution (records are stored in local virt. mem storage)
+
+start adding car adverts …
+
+hint: please don’t leave Price null as it is unhanded in this version…
+
+some fields needs improvement
